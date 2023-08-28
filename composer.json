@@ -5,7 +5,8 @@
     "description": "Advanced Template Hints for Magento",
     "homepage": "http://www.fabrizio-branca.de/magento-advanced-template-hints-20.html",
     "require": {
-        "magento-hackathon/magento-composer-installer": "*"
+        "magento-hackathon/magento-composer-installer": "*",
+        "php": "^8.1"
     },
     "replace": {
         "fbrnc/aoe_templatehints": "*",

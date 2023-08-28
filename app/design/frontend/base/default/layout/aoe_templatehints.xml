@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addItem"><type>skin_js</type><script>aoe_templatehints/js/opentip.min.js</script></action>
+            <action method="addItem"><type>skin_js</type><script>aoe_templatehints/js/excanvas.js</script></action>
+            <action method="addItem"><type>skin_js</type><script>aoe_templatehints/js/aoe_templatehints.js</script></action>
+            <action method="addCss"><stylesheet>aoe_templatehints/css/aoe_templatehints.css</stylesheet></action>
+            <action method="addCss"><stylesheet>aoe_templatehints/css/opentip.css</stylesheet></action>
+        </reference>
+    </default>
+</layout>

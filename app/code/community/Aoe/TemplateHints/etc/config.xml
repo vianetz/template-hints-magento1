@@ -15,7 +15,6 @@
     </modules>
 
     <global>
-
         <models>
             <aoe_templatehints>
                 <class>Aoe_TemplateHints_Model</class>
@@ -39,7 +38,6 @@
                 </observers>
             </core_block_abstract_to_html_after>
         </events>
-
     </global>
 
     <default>
@@ -52,6 +50,16 @@
         </dev>
     </default>
 
+    <frontend>
+        <layout>
+            <updates>
+                <aoe_templatehints>
+                    <file>aoe_templatehints.xml</file>
+                </aoe_templatehints>
+            </updates>
+        </layout>
+    </frontend>
+
     <phpunit>
         <suite>
             <modules>
@@ -59,5 +67,4 @@
             </modules>
         </suite>
     </phpunit>
-
 </config>

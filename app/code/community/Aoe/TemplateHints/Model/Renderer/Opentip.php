@@ -16,8 +16,6 @@ class Aoe_TemplateHints_Model_Renderer_Opentip extends Aoe_TemplateHints_Model_R
         Aoe_TemplateHints_Helper_BlockInfo::TYPE_NOTCACHED => 0,
     );
 
-
-
     /**
      * Init
      *
@@ -25,17 +23,8 @@ class Aoe_TemplateHints_Model_Renderer_Opentip extends Aoe_TemplateHints_Model_R
      * @return string|void
      */
     public function init($wrappedHtml) {
-        $helper = Mage::helper('aoe_templatehints'); /* @var $helper Aoe_TemplateHints_Helper_Data */
-
-        $wrappedHtml .= '<script type="text/javascript">' . $helper->getSkinFileContent('aoe_templatehints/js/opentip.min.js') . '</script>';
-        $wrappedHtml .= '<script type="text/javascript">' . $helper->getSkinFileContent('aoe_templatehints/js/excanvas.js') . '</script>';
-        $wrappedHtml .= '<script type="text/javascript">' . $helper->getSkinFileContent('aoe_templatehints/js/aoe_templatehints.js') . '</script>';
-        $wrappedHtml .= '<style type="text/css">' . $helper->getSkinFileContent('aoe_templatehints/css/aoe_templatehints.css') . '</style>';
-        $wrappedHtml .= '<style type="text/css">' . $helper->getSkinFileContent('aoe_templatehints/css/opentip.css') . '</style>';
-
         return $wrappedHtml;
     }
-
 
     /**
      * Get CSS class for the hint

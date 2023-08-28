@@ -6,9 +6,6 @@
  * @author Fabrizio Branca
  */
 abstract class Aoe_TemplateHints_Model_Renderer_Abstract {
-
-
-
     /**
      * This method will be called only once
      * (before the first template hint is rendered)
@@ -19,8 +16,6 @@ abstract class Aoe_TemplateHints_Model_Renderer_Abstract {
     public function init($content) {
         return $content;
     }
-
-
 
     /**
      * Render template hint
@@ -33,7 +28,4 @@ abstract class Aoe_TemplateHints_Model_Renderer_Abstract {
     public function render(Mage_Core_Block_Abstract $block, $blockContent, $id) {
         return $blockContent;
     }
-
-
-
 }

@@ -1,3 +1,4 @@
-app/etc/modules/Aoe_TemplateHints.xml				app/etc/modules/Aoe_TemplateHints.xml
-app/code/community/Aoe/TemplateHints/				app/code/community/Aoe/TemplateHints/
-skin/frontend/base/default/aoe_templatehints		skin/frontend/base/default/aoe_templatehints
+app/etc/modules/Aoe_TemplateHints.xml                           app/etc/modules/Aoe_TemplateHints.xml
+app/code/community/Aoe/TemplateHints/                           app/code/community/Aoe/TemplateHints/
+app/design/frontend/base/default/layout/aoe_templatehints.xml   app/design/frontend/base/default/layout/aoe_templatehints.xml
+skin/frontend/base/default/aoe_templatehints                    skin/frontend/base/default/aoe_templatehints

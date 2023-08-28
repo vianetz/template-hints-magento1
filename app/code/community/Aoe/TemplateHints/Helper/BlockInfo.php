@@ -15,8 +15,6 @@ class Aoe_TemplateHints_Helper_BlockInfo extends Mage_Core_Helper_Abstract {
     protected $remoteCallEnabled;
     protected $remoteCallUrlTemplate;
 
-
-
     /**
      * Get block information
      *
@@ -52,21 +50,24 @@ class Aoe_TemplateHints_Helper_BlockInfo extends Mage_Core_Helper_Abstract {
         if ($block instanceof Mage_Cms_Block_Block) {
             $info['cms-blockId'] = $block->getBlockId();
         }
+
         if ($block instanceof Mage_Cms_Block_Page) {
             $info['cms-pageId'] = $block->getPage()->getIdentifier();
         }
-        $templateFile = $block->getTemplateFile();
-        if ($templateFile) {
-            $info['template'] = $templateFile;
 
-            if ($this->getRemoteCallEnabled()) {
-                $url = sprintf($this->getRemoteCallUrlTemplate(), Mage::getBaseDir('design') . DS . $templateFile, 0);
-                $info['template'] = sprintf($this->getRemoteCallLinkTemplate(),
-                    $url,
-                    $templateFile
-                );
+        if ($block->getTemplate !== null) {
+            $templateFile = $block->getTemplateFile();
+            if ($templateFile) {
+                $info['template'] = $templateFile;
+
+                if ($this->getRemoteCallEnabled()) {
+                    $url = sprintf($this->getRemoteCallUrlTemplate(), Mage::getBaseDir('design') . DS . $templateFile, 0);
+                    $info['template'] = sprintf($this->getRemoteCallLinkTemplate(),
+                        $url,
+                        $templateFile
+                    );
+                }
             }
-
         }
 
         // cache information
